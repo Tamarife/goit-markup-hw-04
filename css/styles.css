@@ -178,7 +178,6 @@ button {
 .hero-container {
     margin: auto;
     box-sizing: border-box;
-    padding: 356px 188px;
     max-width: 1440px;
 }
 
@@ -209,7 +208,6 @@ button {
     padding: 16px;
     height: 56px;
     margin-top: 48px;
-    margin-bottom: 204px;
     display: block;
     min-width: 169px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -222,10 +220,6 @@ button {
 }
 
 .page-section {
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 120px 0;
 }
 
@@ -314,15 +308,12 @@ button {
 }
 
 .team-item {
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 3 * 24px) / 4);
     background: #ffffff;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-team-list {
@@ -331,29 +322,15 @@ button {
 
 .team-social-link {
     display: flex;
-    align-items: center;
-    gap: 24px;
-    margin: 8px 16px;
     justify-content: center;
-}
+    gap: 24px;
+    }
+    
+    
 
 .team-social-item {
-    align-items: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: #4d5ae5;
-    padding: 12px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:hover,
-.social-link:focus {
-    background-color: #404bbf;
-}
-
-.svg-social {
-    fill: #f4f4fd;
 }
 
 .social-link {
@@ -366,6 +343,14 @@ button {
     justify-content: center;
 }
 
+.social-link:hover,
+.social-link:focus {
+    background-color: #404bbf;
+}
+
+.svg-social {
+    fill: #f4f4fd;
+}
 
 .team-item-title {
     width: 100%;
@@ -376,11 +361,12 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    margin-top: 32px;
     text-align: center;
 }
 
 .team-item-text {
+    width: 100%;
+    height: 100%;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -388,7 +374,6 @@ button {
 }
 
 .portfolio {
-    margin: 192px 156px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -409,8 +394,6 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 180px;
-    margin-bottom: 42px;
     column-gap: 24px;
     row-gap: 48px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -443,7 +426,6 @@ button {
 }
 
 .portfolio-item {
-    display: flex;
     background-color: #FFFFFF;
     flex-wrap: wrap;
     width: calc((100% - 48px) / 3);
@@ -463,10 +445,7 @@ button {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    width: 360px;
-    height: 120px;
     border-top: none;
-    margin-bottom: 8px;
 }
 
 .portfolio-title-list {
@@ -501,7 +480,6 @@ button {
 .footer-container {
     display: flex;
     align-items: baseline;
-
 }
 
 .footer-logo-cont {
@@ -518,37 +496,26 @@ button {
 }
 
 .footer-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    width: 264px;
-    height: 72px;
-    display: block; 
-}
-
-.social-media-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: #f4f4fd;
+    max-width: 264px;
     margin-bottom: 16px;
 }
 
 .footer-social-list {
     display: flex;
-    align-items: center;
     gap: 16px;
-    width: 208px;
-    height: 40px;
 }
 
 .footer-social-item {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .footer-social-link {
     width: 100%;
@@ -566,6 +533,14 @@ button {
     background-color: #31d0aa;
 }
 
+.social-media-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
 .svg-social-footer {
     fill: #f4f4fd;
 }
